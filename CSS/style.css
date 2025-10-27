@@ -1,2 +1,23 @@
-body { font-family: Arial; margin: 0; }
-h1 { color: blue; }
+custom css to extend framework
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+h1 {
+    color: blue;
+}
+
+        /* .active-link {
+            background-color: rgba(55, 65, 81, 0.5);
+            color: white;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */

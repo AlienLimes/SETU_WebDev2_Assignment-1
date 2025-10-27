@@ -44,6 +44,23 @@
 <main>
 <h1>This page is colours</h1>
     
+
+<div id  = "container">
+  <h1>Colours</h1>
+
+
+
+  <form>
+  <div class = "form-row">
+   <label for = "name">Colours</label>
+    <input type="text" name="name" id="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white placeholder-gray-400"
+    placeholder="Enter color name..." autofocus required>
+   </div>
+  <button type = "submit">Search</button>
+  </form>
+  <div class="cpalette"></div>
+</div>
+
 </main>
 
     <!-- Footer -->
@@ -66,14 +83,74 @@
         </div>
     </footer>
 
-
-
-
-
     <!-- link with js -->
- <script src="js/main.js"></script>
+ <!-- <script src="js/main.js"></script> -->
+
+<script>
+
+ const coptions = [
+      {
+        "name": "Red",
+        "shades": ["crimson", "carmine", "burgundy", "coral", "scarlet", "chili red", "vermilion", "cardinal", "cherry"],
+        "image": "images/red.jpg",
+        "compatible_colours": ["white", "black", "blue", "green", "neutrals"]
+      },
+      {
+        "name": "Black",
+        "shades": ["onyx", "charcoal", "jet black", "ebony", "black chocolate", "midnight blue", "licorice", "asphalt", "jungle green"],
+        "image": "images/black.jpg",
+         "compatible_colours": ["white", "black", "blue", "green", "neutrals"]
+      }
+    ]
 
 
+const form = document.querySelector('form');
+
+
+form.addEventListener("submit", (evt) => {
+evt.preventDefault();
+ let name = form.elements.name.value;
+ let filtered_coptions = coptions.filter(colours => colours.name.toLocaleLowerCase().includes(name.toLowerCase()));
+let cpalette = document.querySelector('.cpalette');
+ cpalette.innerHTML = '';
+
+//  if (filtered_coptions.length === 0) {
+//     cpalette.innerHTML = '<p class="text-red-400">No colors found matching "' + name + '"</p>';
+//     return;
+//   }
+
+
+
+    filtered_coptions.forEach(colour => document.querySelector('.cpalette').insertAdjacentHTML('beforeend',
+      `<div class="card">
+    <img src="${colour.image}" alt="${colour.name}" >
+    <div class="text">
+    <h3>${colour.name}</h3>
+   <p>${colour.name} has the following shades: <b>${colour.shades}</b>
+     </p>
+	  <p>${colour.name} has also compatible colurs such as:  ${colour.compatible_colours}</p>
+    </div>
+   </div>`
+  ));
+
+
+
+form.reset();
+
+});
+
+
+
+
+
+   
+	
+
+
+
+
+
+  </script>
 
 
 

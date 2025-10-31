@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="script.js"></script>
     <title>Colour Shock</title>
     
 </head>
-
 
 
 <body class="bg-gray-900 text-white">
@@ -24,14 +24,14 @@
                 </div>
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex shrink-0 items-center">
-                        <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Colour Shock Logo" class="h-8 w-auto" />
+                      <i class="fa-solid fa-plug-circle-bolt fa-2xl " style="color: #2046df; "></i>
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
                             <!-- Current page will have active-link class -->
-                            <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/5 active-link">Home</a>
-                            <a href="inspirations.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Inspirations</a>
-                            <a href="colours.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Colours</a>
+                            <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/5 active-link">Welcome</a>
+                            <a href="data-manipulation.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Data Manipulation</a>
+                            <a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
                         </div>
                     </div>
                 </div>
@@ -42,28 +42,44 @@
 
     </nav>
 
- 
 <main>
+<h1>This page is colours</h1>
+    
 
-<h1>This page is inspirations</h1>
+<div id  = "container">
+  <h1>Colours</h1>
+
+
+
+  <form>
+  <div class = "form-row">
+   <label for = "name">Colours</label>
+    <input type="text" name="name" id="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white placeholder-gray-400"
+    placeholder="Enter color name..." autofocus required>
+   </div>
+  <button type = "submit">Search</button>
+  </form>
+  <div class="cpalette"></div>
+</div>
 
 </main>
-    <!-- Footer -->
+
+    
     <footer class="bg-gray-800/50 py-8 border-t border-gray-700">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Colour Shock Logo" class="h-8 w-auto inline-block" />
+                  <i class="fa-solid fa-plug-circle-bolt fa-2xl " style="color: #2046df; "></i>
                     <span class="ml-2 text-xl font-bold">Colour Shock</span>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
-                    <a href="inspirations.html" class="text-gray-300 hover:text-white">Inspirations</a>
-                    <a href="colours.html" class="text-gray-300 hover:text-white">Colours</a>
+                    <a href="index.html" class="text-gray-300 hover:text-white">Welcome</a>
+                    <a href="data-manipulation.html" class="text-gray-300 hover:text-white">Data Manipulation</a>
+                    <a href="about.html" class="text-gray-300 hover:text-white">About</a>
                 </div>
             </div>
             <div class="mt-8 text-center text-gray-400">
-                <p>&copy; 2023 Colour Shock. All rights reserved.</p>
+                <p>&copy; 2025 Colour Shock. Krisztina Molnar.</p>
             </div>
         </div>
     </footer>
@@ -72,10 +88,35 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <!-- link with js -->
- <script src="js/main.js"></script>
+ <!-- <script src="js/main.js"></script> -->
 
 
+
+
+<script src="js/main.js"> </script>
 
 
 

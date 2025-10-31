@@ -1,12 +1,13 @@
-custom css to extend framework
+custom css to extend framework 
+
 
 body {
-    font-family: Arial;
-    margin: 0;
+  font-family: Arial;
+  margin: 0;
 }
 
 h1 {
-    color: blue;
+  color: blue;
 }
 
 .cpalette {
@@ -18,7 +19,7 @@ h1 {
 form {
   border: solid #00ABE4;
   padding: 1em;
-  width:50%;
+  width: 50%;
   margin: 1em auto;
 }
 
@@ -83,15 +84,12 @@ form button {
   transform: scale(1.1);
 }
 
-        /* .active-link {
-            background-color: rgba(55, 65, 81, 0.5);
-            color: white;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        } */
+
+
+.hero-section {
+  background: linear-gradient(135deg, #5c0922 0%, #764ba2 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
